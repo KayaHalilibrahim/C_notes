@@ -1,2 +1,1 @@
-# C_notes
- This notes about C programing language
+# These notes are the notes I took while studying the C programming language.
