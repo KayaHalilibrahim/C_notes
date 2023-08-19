@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void kayitsil(int A[],int sira,int elemansayisi)
+{
+
+int i;
+if (sira>=elemansayisi+1)
+{
+  printf("gecerli bir sira numarsi giriniz.");
+}
+else
+{
+  for ( i=sira-1; i<elemansayisi-1; i++)
+  {
+    A[i]=A[i+1];
+  }
+  printf("kayit silindikten sonraki durum:\n");
+
+  for ( i = 0; i < elemansayisi; i++)
+  {
+    printf("%d\n",A[i]);
+  }
+  
+}
+
+}
+
+int main()
+{
+
+int n,i,sirano;
+
+printf("kac adet sayi olsun:\n");
+scanf("%d",&n);
+
+int dizi[n];
+
+srand(time(0));     // her seferinde farklı değer almak için kullanırız
+
+for ( i=0; i<n; i++)
+{
+   dizi[i]=rand()%50;
+   printf("%d\n",dizi[i]);
+}
+
+printf("\nsilinecek degerin sira numarasini giriniz:\n");
+scanf("%d",&sirano);
+
+kayitsil(dizi,sirano,n);
+
+
+
+
+
+
+
+  return 0;
+}

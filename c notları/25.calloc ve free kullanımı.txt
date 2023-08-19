@@ -1,0 +1,35 @@
+// dosyadan satır satır bilgi okuyup konsola yazdıma
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int* ptr;
+int n=5;
+int i;
+
+ptr=(int*)calloc(n,sizeof(int));   // aynı şekilde kullanılır
+
+if(ptr==NULL)
+{
+    printf("didn't become");
+}
+else
+    {
+        for(i=0; i<n; i++)
+        {
+            ptr[i]=i+1;
+        }
+        printf("my elements: \n ");
+
+        for(i=0; i<n; i++)
+        {
+            printf("%d ,",ptr[i]);
+        }
+        free(ptr);    // işlemden sonra siler depolama alanında bırakmaz...
+    }
+    return 0;
+}

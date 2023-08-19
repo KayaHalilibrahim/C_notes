@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+                                   // recursive fonksiyon içinde fonksiyon kullanımı...
+void list (int n)
+{
+    int i;
+ if (n==0)
+{
+    printf("%d",n);
+}
+else
+    {
+        printf(" %d ",n);
+        list(n-1);
+    }
+
+}
+
+
+int main()
+{
+int n;
+
+printf("please enter a number:\n");
+ scanf("%d",&n);
+
+ list(n);
+
+    return 0;
+}
+
+******************
+
+output:
+please enter a nuumber:
+5
+5 4 3 2 1 0
+

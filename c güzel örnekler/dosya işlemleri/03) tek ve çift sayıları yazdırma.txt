@@ -1,0 +1,98 @@
+#include"stdio.h"
+#include"stdlib.h"
+
+int main()
+{
+
+FILE *file;
+
+int n,i,numbers;
+
+
+file=fopen("oddandeven.txt","w");
+
+
+if(file==NULL)
+{
+    printf("file could not create.");
+}
+
+else
+    {
+
+printf("please enter the value of the n:");
+scanf("%d",&n);
+
+for(i=1; i<=n; i++)
+{
+if (i%2==0)
+{
+    fprintf(file,"%d=even\n",i);
+}
+
+else
+{
+    fprintf(file,"%d=odd\n",i);
+}
+
+}
+
+    }
+
+    fclose(file);
+
+    printf("\n it was written to file.\n");
+
+   printf("reading in the files information\n");
+
+   file=fopen("oddandeven.txt","r");
+
+   do
+   {
+
+    numbers=getc(file);
+
+if(numbers!=EOF)
+{
+    putchar(numbers);
+}
+
+
+   }while(numbers!=EOF);
+
+
+fclose(file);
+
+
+    return 0;
+}
+
+*************
+output:
+
+reading in the files information
+1=odd
+2=even
+3=odd
+4=even
+5=odd
+6=even
+7=odd
+8=even
+9=odd
+10=even
+11=odd
+12=even
+13=odd
+14=even
+15=odd
+16=even
+17=odd
+18=even
+19=odd
+20=even
+21=odd
+22=even
+23=odd
+24=even
+25=odd

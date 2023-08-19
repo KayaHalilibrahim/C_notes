@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+char work[100]="kayabey";
+char *p1;
+p1=work;   // p1=&work[0];
+
+
+printf("4.elemets in the array:%c\n",work[3]);
+printf("1.elemts in the array:%c\n",*p1);    //  work[0]
+printf("4.elemts in the array:%c",*(p1+3));
+
+    return 0;
+}
+
+
+output:
+
+
+4.elemets in the array:a
+1.elemts in the array:k
+4.elemts in the array:a
+
+*****************************************
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int arr[]={10,20,30,40,50};
+
+   int *ptr;           //int=>4 bit 
+
+   ptr=arr;
+
+   printf("1.eleman:%d\n",*ptr);
+   printf("2.eleman:%d\n",*(ptr+1));
+   printf("5.eleman:%d\n",*(ptr+4));
+    return 0;
+}
+
+
+output:
+
+1.eleman:10
+2.eleman:20
+5.eleman:50
+
+
+
+
+/*  örneğin 10=1000 bit ise 
+20=1004 ,30=1008 bit yer tutar
+burda +1 değeri 4 bit yer tutar!!! */

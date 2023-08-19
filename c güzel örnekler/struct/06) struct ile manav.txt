@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct meyve
+{
+
+    char adi[10];
+    int kg;
+    char formu[10];
+    int tane;
+    int fiyat;
+};
+
+struct sepet
+{
+    char myv[10];
+
+
+};
+
+int main()
+{
+int i;
+int g=0,result=0;
+
+struct meyve oz[2];
+struct sepet tur[2];
+
+for(i=0; i<2; i++)
+{
+    printf("meyvenin adini giriniz:");
+    scanf("%s",&tur[i].myv);
+
+        printf("\n");
+
+    printf("meyvenin agirligini giriniz:");
+    scanf("%d",&oz[i].kg);
+
+        printf("\n");
+
+   printf("meyveenin formunu giriniz:");
+   scanf("%s",&oz[i].formu);
+
+        printf("\n");
+
+   printf("meyvenin fiyatinin giriniz:");
+   scanf("%d",&oz[i].fiyat);
+
+        printf("\n");
+
+
+    g=g+oz[i].kg ;
+}
+
+printf("toplam agirlik:");
+printf("%d",g);
+
+        printf("\n");
+
+
+printf("toplam fiyat:");
+for(i=0; i<2; i++)
+{
+    if(strcmp(oz[i].formu,"yuvarlak")==0)
+    {
+        result=2*(result+(oz[i].kg*oz[i].fiyat));
+    }
+    else
+    {
+        result= result+(oz[i].kg*oz[i].fiyat);
+    }
+
+}
+printf("%d",result);
+
+    return 0;
+}

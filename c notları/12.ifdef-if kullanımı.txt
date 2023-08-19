@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define pi 3.14
+
+
+int main(){ 
+ 
+#ifdef pi          //  macro tanımlanmış ise yazdırılır...
+printf("kaya\n");
+#endif             // bititriken kullan..
+
+#ifdef pii // macro tanımlanmamış ise yazdırılmaz.
+printf("kaya");
+#endif
+
+#ifdef pii         // macrp tanımlanmamış ise else yazdırılır.
+printf("kaya");
+#else
+printf("halil");
+#endif
+
+    return 0;
+}
+
+*****************************
+#include<stdio.h>
+#include<stdlib.h>
+#define sayi 7
+
+int main(){ 
+
+#if (sayi==7)
+printf("number:%d\n",sayi);
+#endif
+
+
+#if sayi==6            // eğer yanlışsa elseyi yazdırır..
+printf("number:%d",sayi);
+#else
+printf("6 is wrong"); // bunu yazdırır
+#endif
+
+    return 0;
+}
+
+

@@ -1,0 +1,78 @@
+ #include<stdio.h>
+#include<string.h> // here is important!!
+
+ int main()
+ {
+/* 
+ char array[]="kaya";
+
+ printf("size of the array= %d\n",strlen(array));
+ printf("size of the array=%d",sizeof(array)); // do not forget \0 !!! */
+ 
+
+
+// ***strcmp***  tuttuğu yerin büyüklüğüne göre sıralar doğru ise 1 yanlış ise 0 yazdırır.
+ 
+ 
+ /* int result;
+ char array1[20]="a";
+ char array2[20]="A";
+
+ result=strcmp(array1,array2);
+ 
+ if (strcmp<0)
+ {
+     printf("A greater than a");
+ }
+ else if (strcmp>0)
+ {
+    printf("a greater than A");
+ }
+ else
+ {
+    printf("both of them are equal");
+ }
+ 
+ // strncmp  n elemana  kadar kıyasla
+  */
+
+
+ /* // ***** strcpy****
+
+ char a1[]="halil";
+ char a2[20];
+
+strcpy(a2,a1);
+
+printf("%s",a2);
+
+// strncopy n karakter kadar kopyala strncopy (a2,a1,2) burdsa a2 ye bir seyler atamak lazım (char a2[20]="")gibi.
+ */
+
+
+
+
+// ****strcat= iki karakter dizisini birleştirir*** 
+
+char empty[100];
+
+strcpy(empty,"my ");
+
+strcat(empty,"name is ");
+ strcat(empty,"halil");
+
+
+printf("%s",empty);
+
+
+// strncat n. elemana kadar birleştir 
+    return 0;
+ }
+
+
+
+
+// %[^\n]s == gets görevi görür...
+
+*********************
+tolower= printf(%c)  >>>>> girilen harfi küçük yazdırır....

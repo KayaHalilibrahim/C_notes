@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+
+FILE *file;
+
+char numbers[10][10];
+char names[10][20];
+int grades[10];
+int i=0;
+
+ if((file=fopen("student.txt","r"))!=NULL)
+{
+    while(!feof(file))
+    {
+        fscanf(file,"%s %s %d",&numbers[i],&names[i],&grades[i]);
+        printf("%s %s %d\n",numbers[i],names[i],grades[i]);
+        i++;
+    }
+}
+
+
+
+ else
+   {
+       printf("the file could not find.");
+   }
+
+   fclose(file);
+
+    return 0;
+}
+
+output:
+
+1515 osman 50
+9874 ayse 64
+4321 mesut 71
+3296 tuncay 96
+8514 veli 18
+7167 gizem 74
+
