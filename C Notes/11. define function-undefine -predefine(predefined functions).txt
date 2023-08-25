@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main(){ // include içine tanımlanmış fonksiyonlar
+int main(){ // functions defined in include
 
 printf("file :%s\n",__FILE__);
 printf("date:%s\n",__DATE__);
@@ -32,5 +32,4 @@ printf("our area:%f",result);
     return 0;
 }
 
-************************/////
-undef tanımlı fonksiyonu kaldırır.
+// undef removes the defined function.

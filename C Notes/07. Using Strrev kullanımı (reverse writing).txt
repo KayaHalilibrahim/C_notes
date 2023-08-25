@@ -19,7 +19,7 @@ printf("new:%s",strrev(text));
 #include<stdio.h>
 #include<string.h>
 
-int main(){ // strlwr YAZILAN METNİ KÜÇÜK HARFLERLE YAZAR
+int main(){  // strlwr WRITE TEXT IN LOWER CAPITALS
 
 char name[20];
 
@@ -34,12 +34,13 @@ printf("new version:%s",strlwr(name));
 
 }
 
+
 ***********************************
 
 #include<stdio.h>
 #include<string.h>
 
-int main(){ // strupr YAZILAN METNİ büyük HARFLERLE YAZAR
+int main(){ // strupr WRITE TEXT IN CAPITAL CAPS
 
 char name[20];
 
@@ -57,7 +58,7 @@ printf("new version:%s",strupr(name));
 #include<stdio.h>
 #include<string.h>
 
-int main(){ // strstr istenilen harflerden sonraki kısmı alır!!
+int main(){ // strstr takes the part after the desired letters!!
 
 char text[]="we learn c lenguage";
 

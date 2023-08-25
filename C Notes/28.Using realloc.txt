@@ -1,7 +1,7 @@
-// daha önce malloc calloc ile ayırdığımız alanda güncelleme yapmamızı sağlar.
-// örneğin depolama alanı yetersiz gelirse genişletilmesini sağlar..(güncelleme)..
+// Allows us to update the area we previously allocated with malloc calloc.
+// allows it to be expanded, for example, if the storage space is insufficient..(update)..
 
-// dosyadan satır satır bilgi okuyup konsola yazdıma
+// read information from the file line by line and write it to the console
 
 
 #include <stdio.h>
@@ -49,9 +49,13 @@ else
     return 0;
 }
 
+/*
+
 ******************
 
 my elements:
  1 ,2 ,3 ,4 ,5 ,
 succesfull
 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,
+
+*/

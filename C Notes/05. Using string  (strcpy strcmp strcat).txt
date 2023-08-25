@@ -1,5 +1,7 @@
  #include<stdio.h>
-#include<string.h> // here is important!!
+#include<string.h>
+
+ // here is important!!
 
  int main()
  {
@@ -10,9 +12,7 @@
  printf("size of the array=%d",sizeof(array)); // do not forget \0 !!! */
  
 
-
-// ***strcmp***  tuttuğu yerin büyüklüğüne göre sıralar doğru ise 1 yanlış ise 0 yazdırır.
- 
+// ***strcmp*** prints 1 if it is correct, 0 if it is incorrect, according to the size of the place it holds.
  
  /* int result;
  char array1[20]="a";
@@ -33,7 +33,7 @@
     printf("both of them are equal");
  }
  
- // strncmp  n elemana  kadar kıyasla
+// strncmp compare up to n elements
   */
 
 
@@ -46,13 +46,13 @@ strcpy(a2,a1);
 
 printf("%s",a2);
 
-// strncopy n karakter kadar kopyala strncopy (a2,a1,2) burdsa a2 ye bir seyler atamak lazım (char a2[20]="")gibi.
+// strncopy copy as many as n characters strncopy (a2,a1,2) If burd is required to assign something to a2 (char a2[20]="").
  */
 
 
 
 
-// ****strcat= iki karakter dizisini birleştirir*** 
+// ****strcat= concatenates two strings***
 
 char empty[100];
 
@@ -65,14 +65,16 @@ strcat(empty,"name is ");
 printf("%s",empty);
 
 
-// strncat n. elemana kadar birleştir 
+// strncatn. concatenate up to element
     return 0;
  }
 
 
+/*
 
-
-// %[^\n]s == gets görevi görür...
+ %[^\n]s == acts as gets...
 
 *********************
-tolower= printf(%c)  >>>>> girilen harfi küçük yazdırır....
+tolower= printf(%c)  >>>>>prints the entered letter in lowercase....
+
+*/

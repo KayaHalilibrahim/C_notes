@@ -5,15 +5,15 @@
 
 int main(){ 
  
-#ifdef pi          //  macro tanımlanmış ise yazdırılır...
+#ifdef pi          // If the macro is defined, it will be printed...
 printf("kaya\n");
-#endif             // bititriken kullan..
+#endif             // use when finished..
 
-#ifdef pii // macro tanımlanmamış ise yazdırılmaz.
+#ifdef pii // If the macro is not defined, it will not be printed.
 printf("kaya");
 #endif
 
-#ifdef pii         // macrp tanımlanmamış ise else yazdırılır.
+#ifdef pii         // If macrp is not defined, else is printed.
 printf("kaya");
 #else
 printf("halil");
@@ -25,19 +25,19 @@ printf("halil");
 *****************************
 #include<stdio.h>
 #include<stdlib.h>
-#define sayi 7
+#define number 7
 
 int main(){ 
 
-#if (sayi==7)
+#if (number==7)
 printf("number:%d\n",sayi);
 #endif
 
 
-#if sayi==6            // eğer yanlışsa elseyi yazdırır..
+#if sayi==6            // if wrong, it write else
 printf("number:%d",sayi);
 #else
-printf("6 is wrong"); // bunu yazdırır
+printf("6 is wrong"); // write this
 #endif
 
     return 0;
